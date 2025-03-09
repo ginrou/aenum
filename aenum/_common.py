@@ -33,10 +33,6 @@ from operator import lshift as _lshift_, rshift as _rshift_, mod as _mod_
 from operator import mul as _mul_, neg as _neg_, pos as _pos_, pow as _pow_
 from operator import truediv as _truediv_, sub as _sub_
 
-if PY2:
-    from . import _py2
-    from ._py2 import *
-    __all__.extend(_py2.__all__)
 if PY3:
     from . import _py3
     from ._py3 import *

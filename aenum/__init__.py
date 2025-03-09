@@ -28,10 +28,7 @@ if sqlite3 is None:
     __all__.remove('SqliteEnum')
 
 
-if PY2:
-    from . import _py2
-    __all__.extend(_py2.__all__)
-else:
+if PY3:
     from . import _py3
     __all__.extend(_py3.__all__)
     __all__.append('AutoEnum')
